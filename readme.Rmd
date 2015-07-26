@@ -1,0 +1,19 @@
+---
+title: "help"
+output: html_document
+---
+
+This simple appliation predicts stopping distance of a car based on its speed. 
+
+Prediction algorithm fits a polynomial model to the data.
+
+Data uses cars dataset embeded into R, which is taken from 
+**Ezekiel, M. (1930) Methods of Correlation Analysis. Wiley**.
+
+Application shows the predicted distance in feets as a text output. A plot also shows the fitted polynomial and the predicted distance vs input speed as a red symbol on the fitted curve.
+
+## input parameters
+
+1- Polynomial fit degree: Shows order of the polynomial to be used for fitting. The polynomial digree is limited to integers from 1 to 4.
+
+2- Speed: Defines the car speed (in mph) for which the the stopping distance (in feets) must be predicted. Speed can vary from 4 to 25 mph.
