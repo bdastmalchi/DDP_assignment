@@ -1,12 +1,10 @@
 library(shiny)
 require(stats); require(graphics)
 
-# Define server logic required to generate and plot a random distribution
 shinyServer(function(input, output) {
     
     output$distPlot <- renderPlot({
         
-        # generate an rnorm distribution and plot it
       degree <- input$degree  
       speed <- input$speed
         plot(cars, xlab = "Speed [mph]", ylab = "Stopping distance [ft]", las = 1, xlim = c(0, 25), lwd = 2, cex.lab = 1.5)
